@@ -26,6 +26,8 @@
             android:textSize="20sp"
         />
     </LinearLayout>
+
+
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,14 +42,13 @@
         android:layout_marginBottom="@dimen/imagebottom"
         />
     <ImageView
-        android:id="@+id/imageView12"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_weight="1"
         android:src="@drawable/atm_machine"
         android:layout_marginBottom="@dimen/imagebottom"
         />
-</LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -73,7 +74,7 @@
             android:layout_marginTop="40dp"
             />
     </LinearLayout>
-    <!--hien thi benh vien va xe buyt-->
+    <!--dong 2-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -84,42 +85,16 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:src="@drawable/hospital"
+            android:src="@drawable/restaurant_dish"
             android:layout_marginBottom="@dimen/imagebottom"
             />
         <ImageView
-            android:id="@+id/imageView122"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:src="@drawable/metro"
+            android:src="@drawable/restaurant_food"
             android:layout_marginBottom="@dimen/imagebottom"
             />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center"
-        >
-        <TextView
-            android:id="@+id/text3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Khách Sạn"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
-            />
-        <TextView
-            android:id="@+id/text4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ATM"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
-            />
-    </LinearLayout>
-
+    
 </android.support.constraint.ConstraintLayout>
