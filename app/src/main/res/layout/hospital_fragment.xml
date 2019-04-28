@@ -6,7 +6,7 @@
         android:id="@+id/hotel"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hotel"
+        android:text="Hospital"
         android:layout_gravity="center"
         android:textSize="30dp"
         />

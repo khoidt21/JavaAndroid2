@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/hotel"
+        android:id="@+id/atm"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hotel"
+        android:text="ATM"
         android:layout_gravity="center"
         android:textSize="30dp"
         />
