@@ -83,20 +83,20 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="350dp"
         >
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:src="@drawable/restaurant_dish"
+            android:src="@drawable/hospital"
             android:layout_marginBottom="@dimen/imagebottom"
             />
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:src="@drawable/restaurant_food"
+            android:src="@drawable/metro"
             android:layout_marginBottom="@dimen/imagebottom"
             />
     </LinearLayout>
@@ -106,14 +106,14 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="350dp"
         >
         <TextView
             android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Khách Sạn"
+            android:text="Bệnh Viện"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="40dp"
             />
@@ -122,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ATM"
+            android:text="Xe Bus"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="40dp"
             />
