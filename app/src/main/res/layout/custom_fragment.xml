@@ -5,7 +5,6 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <!--hien thi anh Viet Nam va text-->
     <LinearLayout
         android:layout_width="match_parent"
