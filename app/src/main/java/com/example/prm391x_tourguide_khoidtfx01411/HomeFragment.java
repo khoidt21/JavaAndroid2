@@ -52,7 +52,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 fragment = new HospitalFragment();
                 replaceFragment(fragment);
                 break;
-                
+
         }
     }
 
