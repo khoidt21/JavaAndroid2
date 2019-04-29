@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">Tour Guide</string>
-    <string name="title_activity_hotel">Hotel</string>
+    <string name="app_name">Tour Guide App</string>
+    <string name="app_hotel">Khách Sạn</string>
+    <string name="app_atm">ATM</string>
+    <string name="app_hospital">Bệnh Viện</string>
+    <string name="app_bus">Xe Bus</string>
 </resources>
+

@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.ImageView;
+import android.content.Intent;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
@@ -35,13 +36,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
+
     @Override
     public void onClick(View view) {
         Fragment fragment = null;
         switch (view.getId()) {
             case R.id.btnImgHotel:
-                fragment = new HotelFragment();
-                replaceFragment(fragment);
+                
+                Intent intent = new Intent(this.getContext(), DetailActivity.class);
+                intent.putExtra("flag","flagmentHotel");
+                startActivity(intent);
                 break;
 
             case R.id.btnImgATM:

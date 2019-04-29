@@ -14,6 +14,8 @@ public class HospitalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         super.onCreateView(inflater, container, savedInstanceState);
+        getActivity().setTitle("Bệnh Viện");
+
         View view = inflater.inflate(R.layout.hospital_fragment, container, false);
 
         return view;
