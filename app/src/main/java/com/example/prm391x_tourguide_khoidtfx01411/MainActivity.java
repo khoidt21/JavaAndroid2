@@ -14,30 +14,10 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imgHotel;
-    ImageView imgATM;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        OnClickListener listener = new OnClickListener() {
-            public void onClick(View view) {
-                Fragment fragment = null;
-                if(view == findViewById(R.id.imgHotel)){
-                    fragment = new HotelFragment();
-                } else if(view == findViewById(R.id.imgATM)) {
-                    fragment = new ATMFragment();
-                }
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
-                transaction.replace(R.id.customFragment, fragment);
-                transaction.commit();
-            }
-        };
-        imgHotel = (ImageView) findViewById(R.id.imgHotel);
-        imgHotel.setOnClickListener(listener);
-        imgATM  = (ImageView)findViewById(R.id.imgATM);
-        imgATM.setOnClickListener(listener);
     }
 }

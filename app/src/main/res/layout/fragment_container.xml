@@ -36,7 +36,7 @@
         android:gravity="center"
         >
         <ImageView
-            android:id="@+id/imgHotel"
+            android:id="@+id/btnImgHotel"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
@@ -45,7 +45,7 @@
 
             />
         <ImageView
-            android:id="@+id/imgATM"
+            android:id="@+id/btnImgATM"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
