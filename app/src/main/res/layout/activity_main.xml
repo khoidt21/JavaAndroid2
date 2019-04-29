@@ -6,11 +6,11 @@
     android:layout_height="fill_parent">
     <fragment
     android:id="@+id/customFragment"
-    class="com.example.prm391x_tourguide_khoidtfx01411.CustomFragment"
+    class="com.example.prm391x_tourguide_khoidtfx01411.MainFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    tools:layout="@layout/custom_fragment">
+    tools:layout="@layout/main_fragment">
 </fragment>
 </LinearLayout>
 
