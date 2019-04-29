@@ -20,7 +20,7 @@ public class ATMFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         super.onCreateView(inflater, container, savedInstanceState);
-        View view = inflater.inflate(R.layout.hotel_fragment, container, false);
+        View view = inflater.inflate(R.layout.atm_fragment, container, false);
 
         return view;
     }
