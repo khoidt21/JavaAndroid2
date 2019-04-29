@@ -16,8 +16,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     ImageView btnImgHotel;
     ImageView btnImgATM;
     ImageView btnImgHospital;
-
-
+    ImageView btnImgBus;
 
     @Nullable
     @Override
@@ -28,10 +27,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         btnImgHotel = (ImageView) view.findViewById(R.id.btnImgHotel);
         btnImgATM = (ImageView) view.findViewById(R.id.btnImgATM);
         btnImgHospital = (ImageView) view.findViewById(R.id.btnImgHospital);
+        btnImgBus = (ImageView) view.findViewById(R.id.btnImgBus);
 
         btnImgHotel.setOnClickListener(this);
         btnImgATM.setOnClickListener(this);
         btnImgHospital.setOnClickListener(this);
+        btnImgBus.setOnClickListener(this);
 
         return view;
     }
@@ -42,30 +43,35 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         Fragment fragment = null;
         switch (view.getId()) {
             case R.id.btnImgHotel:
-                
+
                 Intent intent = new Intent(this.getContext(), DetailActivity.class);
                 intent.putExtra("flag","flagmentHotel");
                 startActivity(intent);
                 break;
 
             case R.id.btnImgATM:
-                fragment = new ATMFragment();
-                replaceFragment(fragment);
+                Intent intent1 = new Intent(this.getContext(),DetailActivity.class);
+                intent1.putExtra("flag","flagmentATM");
+                startActivity(intent1);
                 break;
             case R.id.btnImgHospital:
-                fragment = new HospitalFragment();
-                replaceFragment(fragment);
+                Intent intent2 = new Intent(this.getContext(),DetailActivity.class);
+                intent2.putExtra("flag","flagmentHospital");
+                startActivity(intent2);
                 break;
-
+            case R.id.btnImgBus:
+                Intent intent3 = new Intent(this.getContext(),DetailActivity.class);
+                intent3.putExtra("flag","flagmentBus");
+                startActivity(intent3);
         }
     }
 
-    public void replaceFragment(Fragment someFragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.homeFragment, someFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
+//    public void replaceFragment(Fragment someFragment) {
+//        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+//        transaction.replace(R.id.homeFragment, someFragment);
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+//    }
 
 }
 

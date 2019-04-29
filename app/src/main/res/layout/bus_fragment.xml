@@ -6,10 +6,10 @@
     android:background="@color/colorWhite"
     >
     <TextView
-        android:id="@+id/hospital"
+        android:id="@+id/bus"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Bệnh viện"
+        android:text="Xe Bus"
         android:layout_gravity="center"
         android:textSize="30dp"
         />

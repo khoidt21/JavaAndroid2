@@ -18,15 +18,28 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         String flagment = getIntent().getStringExtra("flag");
-        if (flagment.equals("flagmentHotel")) {
-            //add flagment Hotel
-            Fragment listSongFragment = new HotelFragment();
-            replaceFragment(listSongFragment);
+        switch (flagment){
+            case "flagmentHotel" :
+                Fragment fHotel = new HotelFragment();
+                replaceFragment(fHotel);
+                break;
+            case "flagmentATM":
+                Fragment fATM = new ATMFragment();
+                replaceFragment(fATM);
+                break;
+            case "flagmentHospital":
+                Fragment fHospital = new HospitalFragment();
+                replaceFragment(fHospital);
+                break;
+            case "flagmentBus":
+                Fragment fBus = new BusFragment();
+                replaceFragment(fBus);
+                break;
         }
+
     }
 
     public void replaceFragment(Fragment someFragment) {
-
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.framelayout, someFragment, FRAGMENT_LIST_SONG);
