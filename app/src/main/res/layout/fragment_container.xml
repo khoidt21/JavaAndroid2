@@ -88,7 +88,7 @@
         android:layout_marginTop="350dp"
         >
         <ImageView
-            android:id="@+id/imgHospital"
+            android:id="@+id/btnImgHospital"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
@@ -96,7 +96,7 @@
             android:layout_marginBottom="@dimen/imagebottom"
             />
         <ImageView
-            android:id="@+id/imgMetro"
+            android:id="@+id/btnImgBus"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"

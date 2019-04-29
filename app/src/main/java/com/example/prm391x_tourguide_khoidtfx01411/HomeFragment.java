@@ -14,6 +14,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     ImageView btnImgHotel;
     ImageView btnImgATM;
+    ImageView btnImgHospital;
+
+
 
     @Nullable
     @Override
@@ -23,9 +26,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_container, container, false);
         btnImgHotel = (ImageView) view.findViewById(R.id.btnImgHotel);
         btnImgATM = (ImageView) view.findViewById(R.id.btnImgATM);
+        btnImgHospital = (ImageView) view.findViewById(R.id.btnImgHospital);
 
         btnImgHotel.setOnClickListener(this);
         btnImgATM.setOnClickListener(this);
+        btnImgHospital.setOnClickListener(this);
 
         return view;
     }
@@ -43,6 +48,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 fragment = new ATMFragment();
                 replaceFragment(fragment);
                 break;
+            case R.id.btnImgHospital:
+                fragment = new HospitalFragment();
+                replaceFragment(fragment);
+                break;
+                
         }
     }
 
