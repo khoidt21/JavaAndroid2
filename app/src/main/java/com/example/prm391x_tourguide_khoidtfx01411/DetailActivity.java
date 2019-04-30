@@ -10,7 +10,7 @@ import android.os.Bundle;
 public class DetailActivity extends AppCompatActivity {
 
 
-    static String FRAGMENT_LIST_SONG = "fragmentDetail";
+    static String FRAGMENT_LIST_POSSION = "fragmentDetail";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +42,9 @@ public class DetailActivity extends AppCompatActivity {
     public void replaceFragment(Fragment someFragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.framelayout, someFragment, FRAGMENT_LIST_SONG);
+        fragmentTransaction.add(R.id.framelayout, someFragment, FRAGMENT_LIST_POSSION);
         fragmentTransaction.commit();
-        getSupportFragmentManager().findFragmentByTag(FRAGMENT_LIST_SONG);
+        getSupportFragmentManager().findFragmentByTag(FRAGMENT_LIST_POSSION);
 
     }
 }

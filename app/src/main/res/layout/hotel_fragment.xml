@@ -5,12 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <TextView
-        android:id="@+id/hotel"
+    <ListView android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Khach san"
-        android:layout_gravity="center"
-        android:textSize="30dp"
         />
 </LinearLayout>

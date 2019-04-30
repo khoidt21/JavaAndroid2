@@ -16,9 +16,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class HotelFragment extends Fragment {
+
+    ListView lst;
+    String titleName[] = {"Khach san 1","Khach san 2","Khach san 3"};
+    String desc[] = {"Mo ta 1","Mo ta 2","Mo ta 3"};
+    Integer imgid[] = {R.drawable.ic_add};
 
     @Nullable
     @Override
@@ -28,7 +34,11 @@ public class HotelFragment extends Fragment {
        // getActivity().setTitle("Khách Sạn");
         setTitle("Khách Sạn");
 
+
         View view = inflater.inflate(R.layout.hotel_fragment, container, false);
+        lst = (ListView) view.findViewById(R.id.listview);
+        CustomListView customListView = new CustomListView(this,titleName,desc,imgid);
+
         return view;
     }
     public void setTitle(String title) {
