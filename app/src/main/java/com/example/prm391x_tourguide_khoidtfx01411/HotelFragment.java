@@ -16,49 +16,38 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-
+import android.widget.BaseAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class HotelFragment extends Fragment {
 
     ListView lst;
-    String titleName[] = {"Khach san 1","Khach san 2","Khach san 3"};
-    String desc[] = {"Mo ta 1","Mo ta 2","Mo ta 3"};
-    Integer imgid[] = {R.drawable.ic_add,R.drawable.ic_add,R.drawable.ic_add};
+    String titleName[] = {"The Queen Hotel & Spa","Hanoi Nostalgia Hotel & Spa","Church Legend Hotel Hanoi"};
+    String desc[] = {"67 Thuốc Bắc, Hàng Bồ, Hàng Bồ, Quận Hoàn Kiếm, Hà Nội, Việt Nam","13-15 Luong Ngoc Quyen, Hang Buom, Hoan Kiem, Hàng Buồm, Quận Hoàn Kiếm, Hà Nội, Việt Nam","46 Ấu Triệu, Phường Hàng Trống, Quận Hoàn Kiếm, Hà Nội, Việt Nam"};
+    int imgid[] = {R.drawable.hotel,R.drawable.hotel,R.drawable.hotel};
     List<ItemView> items;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        super.onCreateView(inflater, container, savedInstanceState);
-       // getActivity().setTitle("Khách Sạn");
-        //setTitle("Khách Sạn");
+        setTitle("Khách Sạn");
 
         View view = inflater.inflate(R.layout.hotel_fragment, container, false);
         items = new ArrayList<>();
         ItemView itemView;
-        for (int i = 0; i < 10; i++) {
-            itemView = new ItemView();
-            itemView.setName("Item name"+ i);
-            itemView.setDetail("Item detail"+i);
-            items.add(itemView);
-        }
-        Log.d("AAA", items.size()+"");
-        lst = (ListView) view.findViewById(R.id.listview);
-        BaseAdapter customAdapter = new CustomAdapter(items, container.getContext());
-        //CustomListView customListView = new CustomListView(this.getActivity(),titleName,desc,imgid);
-        lst.setAdapter(customAdapter);
-        //dung roi, anh chi tao ra may Entity ItemView roi add vao lít là xong
 
+        lst = (ListView) view.findViewById(R.id.listview);
+        BaseAdapter customAdapter = new CustomAdapter(imgid,titleName,desc, container.getContext());
+        lst.setAdapter(customAdapter);
         return view;
     }
-    /*public void setTitle(String title) {
+
+    public void setTitle(String title) {
         ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         TextView textView = new TextView(getActivity());
@@ -70,6 +59,6 @@ public class HotelFragment extends Fragment {
         textView.setTextColor(getResources().getColor(R.color.colorWhite));
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setCustomView(textView);
-    }*/
+    }
 
 }
