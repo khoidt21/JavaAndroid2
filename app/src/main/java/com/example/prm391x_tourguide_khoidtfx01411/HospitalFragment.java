@@ -20,12 +20,12 @@ public class HospitalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         super.onCreateView(inflater, container, savedInstanceState);
-        setTitle("Bệnh Viện");
+        //setTitle("Bệnh Viện");
         View view = inflater.inflate(R.layout.hospital_fragment, container, false);
 
         return view;
     }
-    public void setTitle(String title) {
+   /* public void setTitle(String title) {
         ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         TextView textView = new TextView(getActivity());
@@ -38,5 +38,5 @@ public class HospitalFragment extends Fragment {
         textView.setTextColor(getResources().getColor(R.color.colorWhite));
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setCustomView(textView);
-    }
+    }*/
 }

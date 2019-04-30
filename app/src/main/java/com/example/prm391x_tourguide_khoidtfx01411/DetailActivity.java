@@ -44,7 +44,7 @@ public class DetailActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.framelayout, someFragment, FRAGMENT_LIST_POSSION);
         fragmentTransaction.commit();
-        getSupportFragmentManager().findFragmentByTag(FRAGMENT_LIST_POSSION);
+        //getSupportFragmentManager().findFragmentByTag(FRAGMENT_LIST_POSSION);
 
     }
 }
