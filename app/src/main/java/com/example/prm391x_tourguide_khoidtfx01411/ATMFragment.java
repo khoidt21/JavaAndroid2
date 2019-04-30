@@ -14,10 +14,22 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ATMFragment extends Fragment {
+
+
+    ListView lst;
+    String titleName[] = {"ATM Hoàn Kiếm","ATM Đinh Tiên Hoàng","ATM Hội sở"};
+    String desc[] = {"17 phố Lý Thường Kiệt, Phường Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Hà Nội, Việt Nam","7 Đinh Tiên Hoàng, Quận Hoàn Kiếm, Hà Nội","57 Lý Thường Kiệt, Quận Hoàn Kiếm, Hà Nội"};
+    int imgid[] = {R.drawable.atm_machine,R.drawable.atm_machine,R.drawable.atm_machine};
+    List<ItemView> items;
 
 
     @Nullable
@@ -27,6 +39,13 @@ public class ATMFragment extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
         setTitle("ATM");
         View view = inflater.inflate(R.layout.atm_fragment, container, false);
+
+        items = new ArrayList<>();
+        ItemView itemView;
+
+        lst = (ListView) view.findViewById(R.id.listview);
+        BaseAdapter customAdapter = new CustomAdapter(imgid,titleName,desc, container.getContext());
+        lst.setAdapter(customAdapter);
 
         return view;
     }

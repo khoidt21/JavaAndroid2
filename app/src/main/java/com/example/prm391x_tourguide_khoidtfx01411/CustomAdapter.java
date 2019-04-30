@@ -23,10 +23,6 @@ public class CustomAdapter extends BaseAdapter {
     private String[] desc;
 
     public CustomAdapter(int[] IMAGE,String[] NAME,String[] DESC,Context context ) {
-       // this.items = items;
-
-        //Log.d("AAA", "CustomAdapter: " +this.items.size());
-        //Log.d("AAA", "CustomAdapter: "+ context);
         this.image = IMAGE;
         this.name = NAME;
         this.desc = DESC;
