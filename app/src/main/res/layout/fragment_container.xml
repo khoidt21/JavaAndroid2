@@ -13,7 +13,7 @@
         >
         <ImageView android:id="@+id/imgView1"
             android:layout_width="fill_parent"
-            android:layout_height="130dp"
+            android:layout_height="@dimen/heightImageView"
             android:src="@drawable/vietnam"
             android:layout_gravity="center"
             />
@@ -21,14 +21,13 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hà Nội, Việt Nam"
+            android:text="@string/title_VietNam"
             android:layout_gravity="center"
-            android:textSize="20sp"
+            android:textSize="@dimen/titleSizeVN"
             />
     </LinearLayout>
     <!--ket thuc -->
     <!--hien thi 2 annh -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,20 +36,20 @@
         >
         <ImageView
             android:id="@+id/btnImgHotel"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/widthLocation"
+            android:layout_height="@dimen/heightLocation"
+            android:layout_weight="@dimen/weightImage"
             android:src="@drawable/hotel"
-            android:layout_marginBottom="@dimen/imagebottom"
+            android:layout_marginBottom="@dimen/marginBottomImg"
 
             />
         <ImageView
             android:id="@+id/btnImgATM"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/widthLocation"
+            android:layout_height="@dimen/heightLocation"
+            android:layout_weight="@dimen/weightImage"
             android:src="@drawable/atm_machine"
-            android:layout_marginBottom="@dimen/imagebottom"
+            android:layout_marginBottom="@dimen/marginBottomImg"
             />
     </LinearLayout>
     <!--hien thi title hotel va ATM -->
@@ -64,19 +63,19 @@
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Khách Sạn"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
+            android:layout_weight="@dimen/weightTitle"
+            android:text="@string/app_hotel"
+            android:layout_marginLeft="@dimen/marginLeftText"
+            android:layout_marginTop="@dimen/marginTopText"
             />
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="ATM"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
+            android:layout_weight="@dimen/weightTitle"
+            android:text="@string/app_atm"
+            android:layout_marginLeft="@dimen/marginLeftText"
+            android:layout_marginTop="@dimen/marginTopText"
             />
     </LinearLayout>
     <!--dong 2 hien thi 2 cai anh tiep theo-->
@@ -85,21 +84,21 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="@dimen/marginTopLinearLayout"
         >
         <ImageView
             android:id="@+id/btnImgHospital"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/widthLocation"
+            android:layout_height="@dimen/heightLocation"
+            android:layout_weight="@dimen/weightTitle"
             android:src="@drawable/hospital"
             android:layout_marginBottom="@dimen/imagebottom"
             />
         <ImageView
             android:id="@+id/btnImgBus"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/widthLocation"
+            android:layout_height="@dimen/heightLocation"
+            android:layout_weight="@dimen/weightTitle"
             android:src="@drawable/metro"
             android:layout_marginBottom="@dimen/imagebottom"
             />
@@ -110,27 +109,26 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="@dimen/marginTopLinearLayout"
         >
         <TextView
             android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Bệnh Viện"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
+            android:layout_weight="@dimen/weightTitle"
+            android:text="@string/app_hospital"
+            android:layout_marginLeft="@dimen/marginLeftText"
+            android:layout_marginTop="@dimen/marginTopText"
             />
         <TextView
             android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Xe Bus"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="40dp"
+            android:layout_weight="@dimen/weightTitle"
+            android:text="@string/app_bus"
+            android:layout_marginLeft="@dimen/marginLeftText"
+            android:layout_marginTop="@dimen/marginTopText"
             />
     </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>
 

@@ -4,6 +4,7 @@
     <string name="app_atm">ATM</string>
     <string name="app_hospital">Bệnh Viện</string>
     <string name="app_bus">Xe Bus</string>
+    <string name="title_VietNam">Hà Nội, Việt Nam</string>
     <string-array name="listNameHotel">
         <item>The Queen Hotel &amp; Spa</item>
         <item>Hanoi Nostalgia Hotel &amp; Spa</item>
@@ -91,7 +92,6 @@
         <item>BX. Giáp Bát - Phú Minh (Phú Xuyên)</item>
         <item>Cầu Giấy - Nội Bài</item>
         <item>Long Biên - Đông Mỹ</item>
-
     </string-array>
 </resources>
 

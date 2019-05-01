@@ -38,7 +38,7 @@ public class BusFragment extends Fragment {
         lst = (ListView) view.findViewById(R.id.listview);
         BaseAdapter customAdapter = new CustomAdapter(imgid,titleName,desc,container.getContext());
         lst.setAdapter(customAdapter);
-        
+
         return view;
     }
 
