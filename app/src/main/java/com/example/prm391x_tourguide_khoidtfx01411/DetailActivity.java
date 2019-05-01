@@ -43,6 +43,7 @@ public class DetailActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.framelayout, someFragment, FRAGMENT_LIST_POSSION);
+       // fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
         //getSupportFragmentManager().findFragmentByTag(FRAGMENT_LIST_POSSION);
 

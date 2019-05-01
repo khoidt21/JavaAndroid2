@@ -20,5 +20,9 @@
     <dimen name="startTextLinearLayout">20dp</dimen>
     <dimen name="textSizeLinearLayout">15dp</dimen>
     <dimen name="marginTopLinerLayout">10dp</dimen>
+    <dimen name="marginStartText">20dp</dimen>
+    <dimen name="textSizeDetail">18dp</dimen>
+    <dimen name="leftTextDetail">10dp</dimen>
+    <dimen name="topTextDetail">10dp</dimen>
 
 </resources>

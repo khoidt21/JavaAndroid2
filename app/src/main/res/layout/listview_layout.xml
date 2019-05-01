@@ -18,16 +18,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/imageView"
-            android:layout_marginLeft="@dimen/leftTextLinearLayout"
-            android:layout_marginStart="@dimen/startTextLinearLayout"
+            android:layout_marginLeft="@dimen/marginLeftText"
+            android:layout_marginStart="@dimen/marginStartText"
             android:layout_toRightOf="@id/imageView"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:textStyle="bold"
             android:text="TextView"
             android:textSize="@dimen/textSizeLinearLayout"
-            android:layout_marginTop="@dimen/marginTopLinearLayout"
-            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/marginTopLinerLayout"
+            android:textColor="#fff"
         />
     <TextView
             android:id="@+id/tvDesc"
@@ -39,9 +39,10 @@
             android:layout_alignStart="@id/tvTitleName"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/textSizeLinearLayout"
-            android:layout_marginBottom="@dimen/marginTopLinearLayout"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+
         />
     </RelativeLayout>
 
