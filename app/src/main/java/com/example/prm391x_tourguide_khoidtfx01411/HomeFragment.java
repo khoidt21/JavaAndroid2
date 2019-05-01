@@ -65,13 +65,5 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent3);
         }
     }
-
-//    public void replaceFragment(Fragment someFragment) {
-//        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-//        transaction.replace(R.id.homeFragment, someFragment);
-//        transaction.addToBackStack(null);
-//        transaction.commit();
-//    }
-
 }
 

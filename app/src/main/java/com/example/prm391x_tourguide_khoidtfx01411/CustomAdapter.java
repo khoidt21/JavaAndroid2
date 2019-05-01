@@ -1,6 +1,7 @@
 package com.example.prm391x_tourguide_khoidtfx01411;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,17 +17,19 @@ import java.util.List;
 
 public class CustomAdapter extends BaseAdapter {
 
-    List<ItemView> items;
+
     Context context;
     private int[] image;
     private String[] name;
     private String[] desc;
+    private int color;
 
-    public CustomAdapter(int[] IMAGE,String[] NAME,String[] DESC,Context context ) {
-        this.image = IMAGE;
-        this.name = NAME;
-        this.desc = DESC;
+    public CustomAdapter(int[] image,String[] name,String[] desc,Context context ) {
+        this.image = image;
+        this.name = name;
+        this.desc = desc;
         this.context = context;
+        this.color = color;
     }
 
     @Override
@@ -61,6 +64,10 @@ public class CustomAdapter extends BaseAdapter {
 
         ImageView imageView1 = convertView.findViewById(R.id.imageView);
         imageView1.setImageResource(image[i]);
+
+//        if(color==1){
+//            tvTitle.setBackgroundColor(659335);
+//        }
 
         //anh thi dung picaso nhe, thu 2 cai view truoc
         //Find by view id

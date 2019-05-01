@@ -1,6 +1,7 @@
 package com.example.prm391x_tourguide_khoidtfx01411;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -26,41 +27,29 @@ public class ATMFragment extends Fragment {
 
 
     ListView lst;
-    String titleName[] = {"ATM Hoàn Kiếm","ATM Đinh Tiên Hoàng","ATM Hội sở"};
-    String desc[] = {"17 phố Lý Thường Kiệt, Phường Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Hà Nội, Việt Nam","7 Đinh Tiên Hoàng, Quận Hoàn Kiếm, Hà Nội","57 Lý Thường Kiệt, Quận Hoàn Kiếm, Hà Nội"};
-    int imgid[] = {R.drawable.atm_machine,R.drawable.atm_machine,R.drawable.atm_machine};
-    List<ItemView> items;
 
+    int imgid[] = {R.drawable.atm_machine,R.drawable.atm_machine,R.drawable.atm_machine,R.drawable.atm_machine,
+            R.drawable.atm_machine,R.drawable.atm_machine,R.drawable.atm_machine,R.drawable.atm_machine,R.drawable.atm_machine};
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         super.onCreateView(inflater, container, savedInstanceState);
-        setTitle("ATM");
+        Resources res = getResources();
+        String[] titleName = res.getStringArray(R.array.listNameATM);
+        String[] desc = res.getStringArray(R.array.listDescATM);
+        Lib lib = new Lib();
+        String title = getResources().getString(R.string.app_atm);
         View view = inflater.inflate(R.layout.atm_fragment, container, false);
 
-        items = new ArrayList<>();
-        ItemView itemView;
-
+        int color = getResources().getColor(R.color.colorWhite);
+        lib.setTitle((AppCompatActivity)getActivity(),title,color);
         lst = (ListView) view.findViewById(R.id.listview);
-        BaseAdapter customAdapter = new CustomAdapter(imgid,titleName,desc, container.getContext());
+        BaseAdapter customAdapter = new CustomAdapter(imgid,titleName,desc,container.getContext());
         lst.setAdapter(customAdapter);
 
         return view;
     }
-    public void setTitle(String title) {
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        TextView textView = new TextView(getActivity());
-        textView.setText(title);
-        textView.setTextSize(20);
-        textView.setTypeface(null, Typeface.BOLD);
-        textView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-        textView.setGravity(Gravity.CENTER);
-        // textView.setBackgroundColor(getResources().getColor(R.color.background));
-        textView.setTextColor(getResources().getColor(R.color.colorWhite));
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setCustomView(textView);
-    }
+
 }

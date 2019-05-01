@@ -6,4 +6,6 @@
     <color name="colorWhite">#FFF</color>
     <color name="colorBlack">#000</color>
     <color name="background">#9cdc3f</color>
+    <color name="back">#659335</color>
+    <color name="atm">#00868a</color>
 </resources>
