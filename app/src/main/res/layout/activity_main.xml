@@ -10,8 +10,8 @@
     class="com.example.prm391x_tourguide_khoidtfx01411.HomeFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1"
+    android:layout_weight="@dimen/weightFragment"
     tools:layout="@layout/fragment_container">
-</fragment>
+    </fragment>
 </LinearLayout>
 
