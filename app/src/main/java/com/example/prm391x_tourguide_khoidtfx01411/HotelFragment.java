@@ -29,12 +29,9 @@ import java.util.List;
 public class HotelFragment extends Fragment {
 
     ListView lst;
-
-    // 8 item
-    int imgid[] = {R.drawable.hotel,R.drawable.hotel,R.drawable.hotel,R.drawable.hotel,R.drawable.hotel,R.drawable.hotel,R.drawable.hotel,R.drawable.hotel};
-
-   // int imgid = R.drawable.hotel;
-
+    int imgid[] = {R.drawable.hotel,R.drawable.hotel,R.drawable.hotel,R.drawable.hotel,
+            R.drawable.hotel,
+            R.drawable.hotel,R.drawable.hotel,R.drawable.hotel};
 
     @Nullable
     @Override
@@ -45,8 +42,9 @@ public class HotelFragment extends Fragment {
         String[] titleName = res.getStringArray(R.array.listNameHotel);
         String[] desc = res.getStringArray(R.array.listDescHotel);
         String title = getResources().getString(R.string.app_hotel);
+        float textSize = getResources().getDimension(R.dimen.textSize);
         int color = getResources().getColor(R.color.colorWhite);
-        lib.setTitle((AppCompatActivity)getActivity(),title,color);
+        lib.setTitle((AppCompatActivity)getActivity(),title,color,textSize);
         View view = inflater.inflate(R.layout.hotel_fragment, container, false);
         lst = (ListView) view.findViewById(R.id.listview);
         BaseAdapter customAdapter = new CustomAdapter(imgid,titleName,desc, container.getContext());

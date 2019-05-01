@@ -42,9 +42,9 @@ public class ATMFragment extends Fragment {
         Lib lib = new Lib();
         String title = getResources().getString(R.string.app_atm);
         View view = inflater.inflate(R.layout.atm_fragment, container, false);
-
+        float textSize = getResources().getDimension(R.dimen.textSize);
         int color = getResources().getColor(R.color.colorWhite);
-        lib.setTitle((AppCompatActivity)getActivity(),title,color);
+        lib.setTitle((AppCompatActivity)getActivity(),title,color,textSize);
         lst = (ListView) view.findViewById(R.id.listview);
         BaseAdapter customAdapter = new CustomAdapter(imgid,titleName,desc,container.getContext());
         lst.setAdapter(customAdapter);

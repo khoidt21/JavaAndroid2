@@ -47,16 +47,16 @@
         <item>158 Khâm Thiên, Quận Đống Đa, Hà Nội</item>
     </string-array>
     <string-array name="listNameHospital">
-        <item>Bệnh viện Bạch Mai</item>
-        <item>Bệnh Viện Hữu Nghị</item>
-        <item>Bệnh Viện E, Hà Nội</item>
-        <item>Viện Răng Hàm Mặt</item>
-        <item>Bệnh Viện Tai Mũi Họng Trung Ương</item>
-        <item>Bệnh Viện Mắt Trung Ương</item>
-        <item>Viện Y Học Cổ Truyền Trung Ương</item>
-        <item>Bệnh Viện Nội Tiết</item>
-        <item>Bệnh Viện Việt Đức</item>
-        <item>Bệnh Viện Nhi Trung Ương</item>
+         <item>Bệnh viện Bạch Mai</item>
+         <item>Bệnh Viện Hữu Nghị</item>
+         <item>Bệnh Viện E, Hà Nội</item>
+         <item>Viện Răng Hàm Mặt</item>
+         <item>Bệnh Viện Tai Mũi Họng Trung Ương</item>
+         <item>Bệnh Viện Mắt Trung Ương</item>
+         <item>Viện Y Học Cổ Truyền Trung Ương</item>
+         <item>Bệnh Viện Nội Tiết</item>
+         <item>Bệnh Viện Việt Đức</item>
+         <item>Bệnh Viện Nhi Trung Ương</item>
     </string-array>
     <string-array name="listDescHospital">
         <item>78 – Đường Giải Phóng – Phương Mai – Đống Đa – Hà Nội</item>

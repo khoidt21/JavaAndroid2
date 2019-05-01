@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         String title = getResources().getString(R.string.app_name);
         int color = getResources().getColor(R.color.colorWhite);
         Lib lib = new Lib();
-        lib.setTitle(this,title,color);
+        float textSize = getResources().getDimension(R.dimen.textSize);
+        lib.setTitle(this,title,color,textSize);
         setContentView(R.layout.activity_main);
     }
 }
