@@ -59,7 +59,16 @@
         <item>Bệnh Viện Nhi Trung Ương</item>
     </string-array>
     <string-array name="listDescHospital">
-
+        <item>78 – Đường Giải Phóng – Phương Mai – Đống Đa – Hà Nội</item>
+        <item>Số 1 – Trần Khánh Dư – Quận Hai Bà Trưng – Hà Nội</item>
+        <item>89 – Trần Cung – Nghĩa Tân – Cầu Giấy – Hà Nội</item>
+        <item>40B – Tràng Thi – Hoàn Kiếm – Hà Nội</item>
+        <item>78 – Đường Giải Phóng – Quận Đống Đa – Hà Nội</item>
+        <item>85 – Phố Bà Triệu – Quận Hai Bà Trưng – Hà Nội</item>
+        <item>29 – Phố Nguyễn Bỉnh Khiêm – Quận Hai Bà Trưng – Hà Nội</item>
+        <item>80 – Thái Thịnh II – Thịnh Quang – Đống Đa – Hà Nội</item>
+        <item>8 – Phố Phủ Doãn – Quận Hoàn Kiếm – Hà Nội</item>
+        <item>18/879 – Đường La Thành – Quận Đống Đa – Hà Nội</item>
     </string-array>
 
 </resources>
