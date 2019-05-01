@@ -14,4 +14,11 @@
     <dimen name="marginTopText">40dp</dimen>
     <dimen name="marginTopLinearLayout">350dp</dimen>
     <dimen name="weightFragment">1</dimen>
+    <dimen name="widthImageLinearLayout">100dp</dimen>
+    <dimen name="heightImageLinearLayout">100dp</dimen>
+    <dimen name="leftTextLinearLayout">20dp</dimen>
+    <dimen name="startTextLinearLayout">20dp</dimen>
+    <dimen name="textSizeLinearLayout">15dp</dimen>
+    <dimen name="marginTopLinerLayout">10dp</dimen>
+
 </resources>
