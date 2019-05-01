@@ -70,6 +70,28 @@
         <item>8 – Phố Phủ Doãn – Quận Hoàn Kiếm – Hà Nội</item>
         <item>18/879 – Đường La Thành – Quận Đống Đa – Hà Nội</item>
     </string-array>
+    <string-array name="listNameBus">
+        <item>Tuyến 01</item>
+        <item>Tuyến 02</item>
+        <item>Tuyến 03A</item>
+        <item>Tuyến 03B</item>
+        <item>Tuyến 04</item>
+        <item>Tuyến 05</item>
+        <item>Tuyến 06</item>
+        <item>Tuyến 07</item>
+        <item>Tuyến 08</item>
+    </string-array>
+    <string-array name="listDescBus">
+        <item>BX Gia Lâm - BX Yên Nghĩa</item>
+        <item>Bác cổ - BX Yên Nghĩa</item>
+        <item>BX Giáp Bát - BX Gia Lâm</item>
+        <item>Bx Giáp Bát - Vincom - Phúc Lợi</item>
+        <item>Long Biên - BX Nước Ngầm</item>
+        <item>Linh Đàm - Phú Diễn</item>
+        <item>BX. Giáp Bát - Phú Minh (Phú Xuyên)</item>
+        <item>Cầu Giấy - Nội Bài</item>
+        <item>Long Biên - Đông Mỹ</item>
 
+    </string-array>
 </resources>
 

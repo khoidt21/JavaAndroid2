@@ -23,18 +23,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        TextView textView = new TextView(this);
-        textView.setText("Tour Guide App");
-        textView.setTextSize(20);
-        textView.setTypeface(null, Typeface.BOLD);
-        textView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-        textView.setGravity(Gravity.CENTER);
-        textView.setTextColor(getResources().getColor(R.color.colorWhite));
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(textView);
-
+        String title = getResources().getString(R.string.app_name);
+        int color = getResources().getColor(R.color.colorWhite);
+        Lib lib = new Lib();
+        lib.setTitle(this,title,color);
         setContentView(R.layout.activity_main);
-
     }
 }
